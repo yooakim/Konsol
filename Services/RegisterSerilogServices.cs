@@ -25,8 +25,7 @@ namespace Serilog.Injection
             return services.AddSerilogServices(
                 new LoggerConfiguration()
                     .MinimumLevel.Verbose()
-                    .WriteTo.Console()
-                    .WriteTo.MSSqlServer(sqlConnectionString, "Logs"));
+                    .WriteTo.Console());
         }
 
         /// <summary>
